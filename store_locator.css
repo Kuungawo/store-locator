@@ -1,0 +1,263 @@
+
+/*---- Store Locator Header Styles ---- */
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+  margin: 0;
+  font-family: Arial, Gustan;
+}
+
+.container {
+  width: 90%;
+  max-width: 1220px;
+  margin: auto;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+.top-bar {
+  background: #d9e1e6;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-social-icons img {
+  width: 30px;
+  margin-left: 8px;
+}
+
+/* =========================
+   MIDDLE BAR
+========================= */
+.middle-bar {
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.middle-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 45px;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+.nav-toggle {
+  display: none;
+  background: #0b3d5c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* =========================
+   NAVIGATION (DESKTOP)
+========================= */
+.main-nav {
+  background: #e6edf2;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+  gap: 25px;
+  justify-content: flex-start;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #0b3d5c;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   TABLET + MOBILE
+========================= */
+@media (max-width: 991px) {
+
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .main-nav {
+    display: none;
+    width: 100%;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .main-nav li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+  .main-nav li:last-child {
+    border-bottom: none;
+  }
+
+  .middle-bar .container {
+    flex-wrap: wrap;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 576px) {
+
+  .logo img {
+    height: 35px;
+  }
+}
+/*---- Store Locator Header Styles ends ---- */
+
+
+/* Store locator Footer Style ---- */
+
+.footer {
+  font-family: Arial, sans-serif;
+  color:#fff;
+  
+}
+
+.footer-top {
+  background-color: #003b61;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.footer-top a {
+  color:#fff;
+  text-decoration: none;
+}
+
+.footer-top a:hover {
+  text-decoration: underline;
+}
+
+.footer-top h5 {
+  font-weight: bold;
+}
+
+.footer-top li, .footer-top p {
+  font-size: 12px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer-column p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  background: #fff;
+  color: #0b3d5c;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #e6e6e6;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  color:#003b61;
+}
+
+.footer-bottom a {
+  color: #003b61;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    padding: 30px;
+  }
+}
+
+/* Store locator Footer Style ends ---- */
